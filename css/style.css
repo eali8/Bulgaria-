@@ -1,0 +1,470 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lora:ital@1&family=Merriweather&family=Montserrat:ital,wght@0,800;1,700&family=Open+Sans&family=Poppins:ital,wght@0,300;0,400;1,400&family=Roboto+Condensed:ital@1&family=Roboto:ital,wght@0,500;0,900;1,400;1,500&family=Urbanist&display=swap');
+
+*{
+    box-sizing:border-box; 
+    padding:0; 
+    margin:0; 
+} 
+
+body, html{
+    font-size: 1.125rem; 
+    line-height: 1.5rem; 
+    color:#333; 
+    height: 100%;
+    margin: 0 auto; 
+}
+
+/* PAGE STYLE */
+
+.page{
+    height: auto;
+    margin: 0 auto; 
+    width: 80%; 
+}
+
+.banner{
+    background: url('../images/banner2.jpeg') center center; 
+    height: 600px; 
+    background-size:cover; 
+    width: 100%; 
+    animation: img_anim 8s ease infinite; 
+}
+
+header{
+    text-align: center; 
+}
+
+.body-text, .video-text{
+    /* padding: 20px; */
+    width: 100%; 
+}
+
+/* END OF PAGE STYLE */
+
+/* NAV BAR STARTS  */
+
+nav{
+    align-items:center; 
+    background: blue; 
+}
+
+
+nav ul li{
+    display: block; 
+    border-bottom: 1px solid #666; 
+    margin-bottom: 0; 
+}
+
+nav a{
+    display:block;
+	padding: 20px;
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+    transition: 0.6s;
+}
+
+nav a:hover{
+    background: #F7DE02;
+	color: #000;
+}
+
+.main-menu{
+    display:none;
+    height: 69px; 
+}
+
+#logoTop {
+    max-height: 69px;
+    top: 0;
+    left: 0;
+    position: absolute;  
+}
+
+.mobile-menu ul{
+    display:none; 
+}
+
+.hamburger{
+	text-align: left;
+	background: blue;
+	color: #fff;
+}
+
+.complete{
+    text-decoration: line-through;
+}
+
+/* NAV BAR ENDS */
+
+/* PAGE STYLE STARTS */
+
+.welcome{
+    padding: 30px; 
+    text-align: center;
+    line-height: 1em;
+    font-size: 3em; 
+    color: blue;
+}
+
+.welcome:hover{
+    color:pink; 
+    opacity:0.7; 
+}
+
+/* IMAGES */
+.culture, .food, .nightlife {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%; 
+    padding-bottom: 20px;
+    padding-top: 20px; 
+}
+
+#images{
+    display:flex; 
+    flex-wrap: wrap; 
+    background-color: lightblue;
+    align-items: center;
+    justify-content: space-evenly; 
+    padding: 10px 0;  
+    box-sizing: initial;
+}
+
+.eachImg{
+    flex: 0 0 auto; 
+    margin: 5px; 
+    height: 79%; 
+    width: 300px;  
+    font-family: Arial, Helvetica, sans-serif;  
+} 
+
+.eachImg img {  
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+img:hover{border:solid 2px darkblue ; -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+	box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);}
+
+    h3, h2{
+        text-align: center; 
+        font-size: 1.3em;
+        margin-bottom: 0.447em; 
+        color: blue;
+        text-shadow: 5px 2px 5px lightgray; 
+        margin-top: 0.3em; 
+    }
+    
+    h3:hover{
+        color:pink;
+        opacity: 0.7; 
+    }
+
+    h2:hover{
+        color:pink;
+        opacity: 0.7; 
+    }
+
+    p{
+        font-size: 1.1em;
+        line-height: 1.2em;
+    } 
+ 
+   .video-container {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16/9; /* 16:9 aspect ratio (height / width) */
+        overflow: hidden;
+      } 
+    
+    .video-container iframe {
+    position:absolute; 
+    top:0; 
+    left:0;
+    width: 100%;
+    height: 100%;
+    } 
+
+/* BUTTON STARTS HERE */
+.btn-info{
+    text-align: center;
+}
+
+.btn-info a{
+    display: inline-block; 
+    padding: 0.8rem 1.275rem;  
+    background-color: rgb(126, 200, 224); 
+    color: rgb(245, 245, 245); 
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size: 0.8rem; 
+    font-weight: 550;
+    text-align: center; 
+    text-decoration: none;  
+    border-radius: 1.5rem; 
+    text-shadow: #888;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+} 
+
+.btn-info a:hover{
+    background-color: blue;
+    opacity:0.7; 
+    transition: ease-in-out 0.8s; 
+}  
+
+
+/* CONTACT ME form STARTS */
+
+   .center-element {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-bottom: 20px;
+  }   
+
+  .contact{
+    width: 30%;
+    height: 30%;
+    border-radius: 15px;
+    flex: 0 0 auto; 
+  }
+
+form{
+    width: 55%; 
+    padding: 2.5em; 
+    border: 1px splid #ccc; 
+    border-radius: 1em; 
+    margin-left: 20px;
+}
+
+ul{
+    list-style: none; 
+    padding: 0px; 
+    margin:0px; 
+}
+
+form li+li{
+    margin-top: 1em; 
+}
+
+label {
+    display: inline-block; 
+    width: 5.6em; 
+    text-align: center; 
+}
+
+input, textarea{
+    font: 1em sans-serif; 
+    max-width: 300px; 
+    text-align: left;
+    box-sizing: border-box; 
+    border: 2px solid #eee; 
+}
+
+input:focus
+textarea:focus{
+vertical-align: top; 
+height: 5em; 
+}
+
+form{
+background: rgb(255,255,255);
+filter: drop-shadow(2px 2px 5px #888);
+}
+
+/* FOOTER START */
+
+.footer-container{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background: grey; 
+    padding: 3em;
+    color: white; 
+}
+
+.footer-logo img{
+    width: 150px; 
+    height: auto;
+}
+
+.footer-links{
+    display:flex; 
+    flex-direction: column;
+}
+
+.reference, .footContact{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.1em;
+   text-align: center;
+}
+
+.footContact:hover{
+    color: pink;
+    opacity:0.7;  
+}
+
+footer p{
+    max-width: 400px; 
+    margin-left: 0 auto; 
+    text-align: center; 
+}
+.footer-Icons{
+    margin-left: auto;
+    white-space:nowrap; 
+    overflow-x: auto; 
+}
+
+.social-icons {
+   list-style: none;
+   display: flex;
+   gap: 10px; 
+   margin: 0; 
+   padding: 0;
+ }
+ 
+ .social-icons li a {
+   color: white;
+   font-size: 24px;
+   text-decoration: none; 
+ }
+
+/* FOOTER FINISH */
+
+/* MEDIA QUERY */
+
+/* Mobile Device */
+
+@media screen and (max-width:670px) {
+    .mobile-menu, .hamburger{
+        background-color: salmon;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+    }
+
+    .btn-info a{
+        padding: 0.375rem 0.75rem; 
+        font-size: 0.65rem; 
+    }
+   
+    .resp-img {
+        width: 100%;
+    }
+    #logoMobile {
+        max-height: 70px;
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    #images{
+        padding:10%; 
+    }
+
+    .eachImg{
+        width:100%; 
+    }
+
+    .eachImg p{
+        font-size: 0.9em; 
+        line-height: 1.1em;
+    }
+
+    .eachImg img {  
+        width: 100%;
+        height: 300px; 
+    }
+    
+    input, textarea{
+        max-width: 100%;
+    }
+
+    label{
+        max-width: 30%; 
+    }
+}
+
+/* TABLET AND LARGER SCREENS */
+
+ @media (min-width: 670px){
+  .main-menu{
+        display:block; 
+    }
+    .mobile-menu{
+        display:none;
+    }
+
+    nav ul li{
+        display:inline-block;
+        border-bottom: 0;
+    } 
+} 
+
+/* Tablet Device */
+
+@media only screen and (max-width: 768px) 
+{
+   .welcome{
+        font-size: 4.5vw; 
+        padding-bottom: 1em;
+       }  
+  .video-container{
+    padding-bottom: 75%; 
+  }
+
+  .btn-info a{
+    padding: 0.625rem 0.875rem; 
+    font-size: 0.875rem; 
+  }
+
+  .footer-container{
+    flex-direction:column; 
+    align-items: center; 
+  }
+
+  .footer-links{
+    margin-top: 1em; 
+  }
+
+  .footer-Icons{
+    margin-top:1em; 
+    margin-left:0; 
+    overflow-x: auto; 
+    overflow-y:hidden; 
+    flex-wrap:nowrap; 
+    scrollbar-width: thin; 
+  }
+  .social-icons{
+    gap: 0.3125rem; 
+  }
+} 
+
+ @media screen and (max-width: 978px) {
+    #images {
+       height: auto;
+   }  
+   .eachImg {
+       margin-bottom: 10%; 
+   } 
+      
+   .eachImg img {
+       margin-top: 10%;
+       margin-bottom: 4%;
+   }  
+} 
+
+
+ @keyframes img_anim{
+    0%{
+        background-image: url(../images/banner1.jpg)
+    }
+    100%{
+        background-image: url(../images/banner2.jpeg)
+    }
+} 
